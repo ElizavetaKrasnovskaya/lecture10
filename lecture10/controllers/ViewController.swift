@@ -5,24 +5,28 @@ class ViewController: UIViewController {
     // MARK: - Public properties
     var user = User() {
         didSet {
-            initView(isFirstLoad: false)
+            initView()
         }
     }
+    
+    // MARK: - Private properties
+    private var isFirstLoad = true
     
     // MARK: - IBOutlets
     @IBOutlet weak var etName: UITextField!
     @IBOutlet weak var tvName: UILabel!
     @IBOutlet weak var tvEmail: UILabel!
     @IBOutlet weak var tvPassword: UILabel!
-    
+    @IBOutlet weak var nextButton: UIButton!
+
     // MARK: - Override methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        initView(isFirstLoad: true)
+        initView()
     }
     
     // MARK: - Private methods
-    private func initView(isFirstLoad: Bool) {
+    private func initView() {
         if isFirstLoad {
             etName.alpha = 1
             tvName.alpha = 0
@@ -30,11 +34,13 @@ class ViewController: UIViewController {
             tvPassword.alpha = 0
         } else {
             etName.alpha = 0
+            nextButton.alpha = 0
             tvName.alpha = 1
             tvEmail.alpha = 1
             tvPassword.alpha = 1
             setUserData()
         }
+        isFirstLoad = false
     }
     
     private func setUserData() {

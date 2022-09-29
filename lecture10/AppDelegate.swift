@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  lecture10
-//
-//  Created by admin on 26/09/2022.
-//
-
 import UIKit
 
 @main

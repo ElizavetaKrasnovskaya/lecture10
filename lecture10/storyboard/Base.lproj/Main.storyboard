@@ -77,6 +77,7 @@
                     </view>
                     <connections>
                         <outlet property="etName" destination="ew3-Kh-Vet" id="p8j-cI-Pha"/>
+                        <outlet property="nextButton" destination="gsw-Hc-P8u" id="5zt-lQ-1ra"/>
                         <outlet property="tvEmail" destination="L4V-lO-2tM" id="sEw-Lu-Vxx"/>
                         <outlet property="tvName" destination="a5r-KU-n4z" id="FGa-WK-8yJ"/>
                         <outlet property="tvPassword" destination="6lz-Zu-gFT" id="RoW-5o-zUR"/>
