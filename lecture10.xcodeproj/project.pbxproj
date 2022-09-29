@@ -13,6 +13,13 @@
 		844C41E528E24D3600522EB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844C41E328E24D3600522EB5 /* Main.storyboard */; };
 		844C41E728E24D3700522EB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844C41E628E24D3700522EB5 /* Assets.xcassets */; };
 		844C41EA28E24D3700522EB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844C41E828E24D3700522EB5 /* LaunchScreen.storyboard */; };
+		849E304628E4B3E100DD1E98 /* PresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E304528E4B3E100DD1E98 /* PresentViewController.swift */; };
+		849E304A28E4C4C700DD1E98 /* ToastExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E304928E4C4C700DD1E98 /* ToastExt.swift */; };
+		849E304C28E4CB5400DD1E98 /* SegueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E304B28E4CB5400DD1E98 /* SegueViewController.swift */; };
+		849E304F28E4D45000DD1E98 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849E304E28E4D45000DD1E98 /* Second.storyboard */; };
+		849E305328E4D4D300DD1E98 /* SecondStoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E305228E4D4D300DD1E98 /* SecondStoryboardViewController.swift */; };
+		849E305528E4D71E00DD1E98 /* LastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E305428E4D71E00DD1E98 /* LastViewController.swift */; };
+		849E305A28E4D88400DD1E98 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E305928E4D88400DD1E98 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		844C41E628E24D3700522EB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		844C41E928E24D3700522EB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		844C41EB28E24D3700522EB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		849E304528E4B3E100DD1E98 /* PresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentViewController.swift; sourceTree = "<group>"; };
+		849E304928E4C4C700DD1E98 /* ToastExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastExt.swift; sourceTree = "<group>"; };
+		849E304B28E4CB5400DD1E98 /* SegueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueViewController.swift; sourceTree = "<group>"; };
+		849E304E28E4D45000DD1E98 /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
+		849E305228E4D4D300DD1E98 /* SecondStoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStoryboardViewController.swift; sourceTree = "<group>"; };
+		849E305428E4D71E00DD1E98 /* LastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastViewController.swift; sourceTree = "<group>"; };
+		849E305928E4D88400DD1E98 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,54 @@
 		844C41DC28E24D3600522EB5 /* lecture10 */ = {
 			isa = PBXGroup;
 			children = (
+				849E305628E4D7F100DD1E98 /* data */,
+				849E304D28E4D43100DD1E98 /* storyboard */,
+				849E304828E4C4A600DD1E98 /* controllers */,
+				849E304728E4C49300DD1E98 /* extensions */,
 				844C41DD28E24D3600522EB5 /* AppDelegate.swift */,
 				844C41DF28E24D3600522EB5 /* SceneDelegate.swift */,
-				844C41E128E24D3600522EB5 /* ViewController.swift */,
-				844C41E328E24D3600522EB5 /* Main.storyboard */,
 				844C41E628E24D3700522EB5 /* Assets.xcassets */,
 				844C41E828E24D3700522EB5 /* LaunchScreen.storyboard */,
 				844C41EB28E24D3700522EB5 /* Info.plist */,
 			);
 			path = lecture10;
+			sourceTree = "<group>";
+		};
+		849E304728E4C49300DD1E98 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				849E304928E4C4C700DD1E98 /* ToastExt.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		849E304828E4C4A600DD1E98 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				844C41E128E24D3600522EB5 /* ViewController.swift */,
+				849E304528E4B3E100DD1E98 /* PresentViewController.swift */,
+				849E304B28E4CB5400DD1E98 /* SegueViewController.swift */,
+				849E305228E4D4D300DD1E98 /* SecondStoryboardViewController.swift */,
+				849E305428E4D71E00DD1E98 /* LastViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		849E304D28E4D43100DD1E98 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				844C41E328E24D3600522EB5 /* Main.storyboard */,
+				849E304E28E4D45000DD1E98 /* Second.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		849E305628E4D7F100DD1E98 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				849E305928E4D88400DD1E98 /* User.swift */,
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849E304F28E4D45000DD1E98 /* Second.storyboard in Resources */,
 				844C41EA28E24D3700522EB5 /* LaunchScreen.storyboard in Resources */,
 				844C41E728E24D3700522EB5 /* Assets.xcassets in Resources */,
 				844C41E528E24D3600522EB5 /* Main.storyboard in Resources */,
@@ -138,9 +192,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849E304C28E4CB5400DD1E98 /* SegueViewController.swift in Sources */,
 				844C41E228E24D3600522EB5 /* ViewController.swift in Sources */,
+				849E305328E4D4D300DD1E98 /* SecondStoryboardViewController.swift in Sources */,
 				844C41DE28E24D3600522EB5 /* AppDelegate.swift in Sources */,
+				849E304628E4B3E100DD1E98 /* PresentViewController.swift in Sources */,
+				849E305A28E4D88400DD1E98 /* User.swift in Sources */,
 				844C41E028E24D3600522EB5 /* SceneDelegate.swift in Sources */,
+				849E305528E4D71E00DD1E98 /* LastViewController.swift in Sources */,
+				849E304A28E4C4C700DD1E98 /* ToastExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
